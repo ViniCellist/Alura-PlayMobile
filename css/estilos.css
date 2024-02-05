@@ -1,17 +1,17 @@
 *,
 *::before,
 *::after {
-    --azul-escuro: #154580;
-    --azul-medio: #3970BE;
-    --azul-claro: #E5F1FF;
-    --cinza-texto: #444444;
-    --cinza-claro: #ECECEC;
+    --dark-blue: #154580;
+    --medium-blue: #3970BE;
+    --light-blue: #E5F1FF;
+    --gray-text: #444444;
+    --light-gray: #ECECEC;
     box-sizing: border-box;
 }
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    background-color: var(--azul-claro);
+    background-color: var(--light-blue);
     position: relative;
     width: 100%;
     height: 100vh;
@@ -24,7 +24,7 @@ body {
 
 /* CABEÇALHO */
 
-.cabecalho__container {
+.header__container {
     background-color: white;
     height: 80px;
     width: 100%;
@@ -38,7 +38,7 @@ body {
     cursor: pointer;
 }
 
-.pesquisar__input {
+.search__input {
     width: 260px;
     height: 32px;
     border: 1px solid rgb(211, 211, 211);
@@ -47,7 +47,7 @@ body {
     border: 1px solid rgb(211, 211, 211);
 }
 
-.pesquisar__label {
+.search__label {
     background-image: url(../img/cabecalho/search.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -58,34 +58,34 @@ body {
     cursor: pointer;
 }
 
-.cabecalho__audio {
+.header__audio {
     background-image: url(../img/cabecalho/mic.png);
     padding: 20px;
     display: none;
 }
 
-.cabecalho__videos {
+.header__videos {
     background-image: url(../img/cabecalho/video_call.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
 }
 
-.cabecalho__apps {
+.header__apps {
     background-image: url(../img/cabecalho/apps.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
 }
 
-.cabecalho__notificacoes {
+.header__notificacoes {
     background-image: url(../img/cabecalho/notifications.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
 }
 
-.cabecalho__avatar {
+.header__avatar {
     background-image: url(../img/cabecalho/Avatar.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -95,98 +95,98 @@ body {
 /* MENU LATERAL */
 
 .menu__container {
-    background-color: var(--azul-escuro);
+    background-color: var(--dark-blue);
     font-size: 14px;
 }
 
-.menu__itens:hover {
-    background-color: var(--azul-medio);
+.menu__items:hover {
+    background-color: var(--medium-blue);
     transition: .5s;
 }
 
-.icone__inicio::before {
+.icon__start::before {
     content: url(../img/menu/home.png);
 }
 
-.icone__explorar::before {
+.icon__explore::before {
     content: url(../img/menu/explore.png);
 }
 
-.icone__shorts::before {
+.icon__shorts::before {
     content: url(../img/menu/shorts.png);
 }
 
-.icone__inscricoes::before {
+.icon__subscription::before {
     content: url(../img/menu/subscriptions.png);
 }
 
-.icone__biblioteca::before {
+.icon__library::before {
     content: url(../img/menu/video_library.png);
 }
 
-.icone__historico::before {
+.icon__history::before {
     content: url(../img/menu/history.png);
 }
 
-.icone__relogio::before {
+.icon__timer::before {
     content: url(../img/menu/history_toggle_off.png);
 }
 
-.icone__like::before {
+.icon__like::before {
     content: url(../img/menu/thumb_up_alt.png);
 }
 
-.icone__alura::before {
+.icon__alura::before {
     content: url(../img/menu/Avatar_Alura.png);
 }
 
-.icone__gaveta::before {
+.icon__gaveta::before {
     content: url(../img/menu/Avatar_Gaveta.png);
 }
 
-.icone__ballerini::before {
+.icon__ballerini::before {
     content: url(../img/menu/Avatar_Rafa.png);
 }
 
-.icone__iamarino::before {
+.icon__iamarino::before {
     content: url(../img/menu/Avatar_Atila.png);
 }
 
-.icone__souto::before {
+.icon__souto::before {
     content: url(../img/menu/Avatar_Souto.png);
 }
 
-.icone__nerd::before {
+.icon__nerd::before {
     content: url(../img/menu/Avatar_Jovem_Nerd.png);
 }
 
-.icone__deschamps::before {
+.icon__deschamps::before {
     content: url(../img/menu/Avatar_Deschamps.png);
 }
 
-.icone__mostrar::before {
+.icon__show::before {
     content: url(../img/menu/keyboard_arrow_down.png);
 }
 
-.icone__videos::before {
+.icon__videos::before {
     content: url(../img/menu/videos.png);
 }
 
-.icone__filmes::before {
+.icon__movies::before {
     content: url(../img/menu/filmes.png);
 }
 
-.icone__jogos::before {
+.icon__games::before {
     content: url(../img/menu/jogos.png);
 }
 
-/* SECAO SUPERIOR */
+/* section upper */
 
-.superior__secao__container {
+.upper__section__container {
     height: 63px;
     color: white;
     font-size: 16px;
-    background-color: var(--azul-claro);
+    background-color: var(--light-blue);
     padding: 0 20px;
     position: fixed;
     top: 80px;
@@ -194,8 +194,8 @@ body {
     left: 0;
 }
 
-.superior__item {
-    color: var(--cinza-texto);
+.upper__item {
+    color: var(--gray-text);
     font-size: 16px;
     background-color: white;
     border-radius: 20px;
@@ -203,9 +203,9 @@ body {
     cursor: pointer;
 }
 
-.superior__item:hover {
+.upper__item:hover {
     color: white;
-    background-color: var(--azul-escuro);
+    background-color: var(--dark-blue);
     transition: .5s;
 }
 
@@ -218,7 +218,7 @@ body {
 
 .videos__item:hover {
     transform: scale(1.3);
-    background-color: var(--azul-claro);
+    background-color: var(--light-blue);
     z-index: 2;
     transition: .5s;
 }
@@ -235,17 +235,17 @@ body {
 
 /* RODAPÉ */
 
-.rodape__container {
+.footer__container {
     width: 100%;
     height: 875px;
-    color: var(--cinza-texto);
+    color: var(--gray-text);
     line-height: 1.5;
     font-size: 16px;
     background-color: white;
 }
 
-.rodape__titulo {
-    color: var(--azul-medio);
+.footer__title {
+    color: var(--medium-blue);
     font-weight: bold;
     padding: 10px 0 20px 0;
 }
@@ -262,19 +262,19 @@ body {
         font-size: 16px;
     }
 
-    .menu__lista {
+    .menu__list {
         padding-top: 15px;
     }
 
-    .menu__lista li {
+    .menu__list li {
         width: 100%;
     }
 
-    /* ESTILOS DA SECAO SUPERIOR */
+    /* ESTILOS DA section upper */
 
-    .superior__secao__container {
-        border-top: var(--azul-medio) 1px solid;
-        border-bottom: var(--azul-medio) 1px solid;
+    .upper__section__container {
+        border-top: var(--medium-blue) 1px solid;
+        border-bottom: var(--medium-blue) 1px solid;
         width: auto;
         left: 82px;
     }
@@ -292,7 +292,7 @@ body {
 
     /* ESTILOS RODAPÉ */
 
-    .rodape__container {
+    .footer__container {
         height: 420px;
         padding-left: 74px;
     }
@@ -301,16 +301,16 @@ body {
 
 @media(min-width: 1440px) {
 
-    /* SEÇÃO SUPERIOR */
+    /* SEÇÃO upper */
 
-    .superior__secao__container {
+    .upper__section__container {
         left: 247px;
     }
 
     /* ESTILOS DO MENU LATERAL */
 
-    .menu__lista {
-        border-bottom: 1.5px solid var(--azul-medio);
+    .menu__list {
+        border-bottom: 1.5px solid var(--medium-blue);
     }
 
     /* ESTILOS VIDEOS */
@@ -322,7 +322,7 @@ body {
 
     /* ESTILOS RODAPÉ */
 
-    .rodape__container {
+    .footer__container {
         padding-left: 240px;
         height: 225px;
     }
