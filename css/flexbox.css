@@ -1,1 +1,17 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
 
+.header__search__item {
+    display: none;
+}
+
+@media screen and (min-width: 834px) {
+    .header__search__item {
+        display: block;
+    }
+}
