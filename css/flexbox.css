@@ -10,8 +10,18 @@
     display: none;
 }
 
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 834px) {
     .header__search__item {
         display: block;
+    }
+
+    .footer__container {
+        justify-content: space-between;
     }
 }
