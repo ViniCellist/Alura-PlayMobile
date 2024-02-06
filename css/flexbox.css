@@ -10,6 +10,14 @@
     display: none;
 }
 
+.upper__section__container {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 1rem;
+}
+
 .footer__container {
     display: flex;
     flex-direction: column;
