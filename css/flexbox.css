@@ -47,6 +47,11 @@
     gap: 1rem;
 }
 
+.videos__item {
+    height: 18.938rem;
+    width: 17.5rem;
+}
+
 .footer__container {
     display: flex;
     flex-direction: column;
